@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswenna (අස්වැන්න) - Digital Agriculture Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Aswenna (අස්වැන්න)</h1>
+            </div>
+            <div class="nav-links">
+                <select id="languageSelector" class="language-selector">
+                    <option value="en">English</option>
+                    <option value="si">සිංහල (Sinhala)</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                </select>
+                <a href="#about" class="nav-link" data-en="About" data-si="ගැන" data-ta="பற்றி">About</a>
+                <a href="#features" class="nav-link" data-en="Features" data-si="විශේෂාංග" data-ta="அம்சங்கள்">Features</a>
+                <a href="#signin" class="nav-link signin-btn" data-en="Sign In" data-si="පුරන්න" data-ta="உள்நுழைக">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Intro Video -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title" data-en="Connecting Sri Lanka's Agricultural Community" data-si="ශ්‍රී ලංකාවේ කෘෂිකාර්මික ප්‍රජාව සම්බන්ධ කිරීම" data-ta="இலங்கையின் விவசாய சமூகத்தை இணைத்தல்">Connecting Sri Lanka's Agricultural Community</h2>
+                <p class="hero-subtitle" data-en="Empowering farmers, landowners, and sponsors through sustainable agriculture and digital collaboration" data-si="තිරසාර කෘෂිකර්මාන්තය සහ ඩිජිටල් සහයෝගීතාව හරහා ගොවීන්, ඉඩම් හිමියන් සහ අනුග්‍රාහකයන් සවිබල ගැන්වීම" data-ta="நிலையான விவசாயம் மற்றும் டிஜிட்டல் ஒத்துழைப்பு மூலம் விவசாயிகள், நில உரிமையாளர்கள் மற்றும் நிதியுதவியாளர்களை மேம்படுத்துதல்">Empowering farmers, landowners, and sponsors through sustainable agriculture and digital collaboration</p>
+                
+                <!-- Video Container -->
+                <div class="video-container">
+                    <video id="introVideo" controls poster="assets/video-poster.jpg">
+                        <source src="assets/intro-video.mp4" type="video/mp4">
+                        <p data-en="Your browser does not support the video tag." data-si="ඔබගේ බ්‍රව්සරය වීඩියෝ ටැග් සඳහා සහය නොදක්වයි." data-ta="உங்கள் உலாவி வீடியோ குறியை ஆதரிக்கவில்லை.">Your browser does not support the video tag.</p>
+                    </video>
+                    <p class="video-caption" data-en="Watch our introduction to see how Aswenna brings the farming community together" data-si="කෘෂිකාර්මික ප්‍රජාව එකට ගෙන ආ ආකාරය බැලීමට අපගේ හැඳින්වීම නරඹන්න" data-ta="அஸ்வென்னா விவசாய சமூகத்தை எவ்வாறு ஒன்றிணைக்கிறது என்பதைப் பார்க்க எங்கள் அறிமுகத்தைப் பாருங்கள்">Watch our introduction to see how Aswenna brings the farming community together</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About Aswenna" data-si="අස්වැන්න ගැන" data-ta="அஸ்வென்னா பற்றி">About Aswenna</h2>
+            <p class="section-description" data-en="Aswenna is a smart agricultural platform designed to empower Sri Lanka's farming community. It creates a digital bridge between farmers, landowners, and sponsors, promoting sustainable agriculture, financial transparency, and efficient resource management." data-si="අස්වැන්න යනු ශ්‍රී ලංකාවේ ගොවිජන ප්‍රජාව සවිබල ගැන්වීම සඳහා නිර්මාණය කරන ලද බුද්ධිමත් කෘෂිකාර්මික වේදිකාවකි. එය තිරසාර කෘෂිකර්මාන්තය, මූල්‍ය විනිවිදභාවය සහ කාර්යක්ෂම සම්පත් කළමනාකරණය ප්‍රවර්ධනය කරමින් ගොවීන්, ඉඩම් හිමියන් සහ අනුග්‍රාහකයන් අතර ඩිජිටල් පාලමක් නිර්මාණය කරයි." data-ta="அஸ்வென்னா என்பது இலங்கையின் விவசாய சமூகத்தை மேம்படுத்த வடிவமைக்கப்பட்ட ஒரு ஸ்மார்ட் விவசாய தளமாகும். இது நிலையான விவசாயம், நிதி வெளிப்படைத்தன்மை மற்றும் திறமையான வள மேலாண்மையை ஊக்குவிக்கும் வகையில் விவசாயிகள், நில உரிமையாளர்கள் மற்றும் நிதியுதவியாளர்களுக்கு இடையே ஒரு டிஜிட்டல் பாலத்தை உருவாக்குகிறது.">Aswenna is a smart agricultural platform designed to empower Sri Lanka's farming community. It creates a digital bridge between farmers, landowners, and sponsors, promoting sustainable agriculture, financial transparency, and efficient resource management.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-en="Platform Features" data-si="වේදිකා විශේෂාංග" data-ta="தள அம்சங்கள்">Platform Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3 data-en="Unified E-Link System" data-si="ඒකාබද්ධ ඊ-සබැඳිය පද්ධතිය" data-ta="ஒருங்கிணைந்த இ-இணைப்பு அமைப்பு">Unified E-Link System</h3>
+                    <p data-en="Connect farmers, landowners, and sponsors through our innovative digital platform" data-si="අපගේ නව්‍ය ඩිජිටල් වේදිකාව හරහා ගොවීන්, ඉඩම් හිමියන් සහ අනුග්‍රාහකයන් සම්බන්ධ කරන්න" data-ta="எங்கள் புதுமையான டிஜிட்டல் தளம் மூலம் விவசாயிகள், நில உரிமையாளர்கள் மற்றும் நிதியுதவியாளர்களை இணைக்கவும்">Connect farmers, landowners, and sponsors through our innovative digital platform</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌾</div>
+                    <h3 data-en="Sustainable Farming" data-si="තිරසාර ගොවිතැන" data-ta="நிலையான விவசாயம்">Sustainable Farming</h3>
+                    <p data-en="Promote eco-friendly agricultural practices and sustainable resource management" data-si="පරිසර හිතකාමී කෘෂිකාර්මික භාවිතයන් සහ තිරසාර සම්පත් කළමනාකරණය ප්‍රවර්ධනය කරන්න" data-ta="சுற்றுச்சூழல் நட்பு விவசாய நடைமுறைகள் மற்றும் நிலையான வள மேலாண்மையை ஊக்குவிக்கவும்">Promote eco-friendly agricultural practices and sustainable resource management</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 data-en="Collaboration Tools" data-si="සහයෝගිතා මෙවලම්" data-ta="ஒத்துழைப்பு கருவிகள்">Collaboration Tools</h3>
+                    <p data-en="Facilitate seamless communication and partnership opportunities" data-si="බාධාවකින් තොර සන්නිවේදනය සහ හවුල්කාරිත්ව අවස්ථා සපයයි" data-ta="தடையற்ற தொடர்பு மற்றும் கூட்டாண்மை வாய்ப்புகளை எளிதாக்குங்கள்">Facilitate seamless communication and partnership opportunities</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 data-en="Financial Transparency" data-si="මූල්‍ය විනිවිදභාවය" data-ta="நிதி வெளிப்படைத்தன்மை">Financial Transparency</h3>
+                    <p data-en="Track funding, investments, and resource allocation with complete transparency" data-si="සම්පූර්ණ විනිවිදභාවය සමඟ අරමුදල්, ආයෝජන සහ සම්පත් වෙන් කිරීම නිරීක්ෂණය කරන්න" data-ta="முழு வெளிப்படைத்தன்மையுடன் நிதியுதவி, முதலீடுகள் மற்றும் வள ஒதுக்கீட்டைக் கண்காணிக்கவும்">Track funding, investments, and resource allocation with complete transparency</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 data-en="Multi-Language Support" data-si="බහු භාෂා සහාය" data-ta="பல மொழி ஆதரவு">Multi-Language Support</h3>
+                    <p data-en="Access the platform in Sinhala, Tamil, and English for inclusive participation" data-si="ඇතුළත් කිරීමේ සහභාගීත්වය සඳහා සිංහල, දෙමළ සහ ඉංග්‍රීසි බසින් වේදිකාවට පිවිසෙන්න" data-ta="உள்ளடக்கிய பங்கேற்புக்காக சிங்களம், தமிழ் மற்றும் ஆங்கிலத்தில் தளத்தை அணுகவும்">Access the platform in Sinhala, Tamil, and English for inclusive participation</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-en="Resource Management" data-si="සම්පත් කළමනාකරණය" data-ta="வள மேலாண்மை">Resource Management</h3>
+                    <p data-en="Optimize land usage, crop planning, and agricultural resources efficiently" data-si="ඉඩම් භාවිතය, බෝග සැලසුම් කිරීම සහ කෘෂිකාර්මික සම්පත් කාර්යක්ෂමව ප්‍රශස්ත කරන්න" data-ta="நிலப் பயன்பாடு, பயிர் திட்டமிடல் மற்றும் விவசாய வளங்களை திறமையாக மேம்படுத்துங்கள்">Optimize land usage, crop planning, and agricultural resources efficiently</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign In Section -->
+    <section id="signin" class="signin-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Join Our Community" data-si="අපගේ ප්‍රජාවට එකතු වන්න" data-ta="எங்கள் சமூகத்தில் சேரவும்">Join Our Community</h2>
+            <p class="section-description" data-en="Choose your role to get started with Aswenna" data-si="අස්වැන්න සමඟ ආරම්භ කිරීමට ඔබේ භූමිකාව තෝරන්න" data-ta="அஸ்வென்னாவுடன் தொடங்க உங்கள் பாத்திரத்தைத் தேர்ந்தெடுக்கவும்">Choose your role to get started with Aswenna</p>
+            
+            <div class="signin-options">
+                <div class="signin-card">
+                    <div class="signin-icon">👨‍🌾</div>
+                    <h3 data-en="Farmer" data-si="ගොවියා" data-ta="விவசாயி">Farmer</h3>
+                    <p data-en="Access land, resources, and connect with sponsors" data-si="ඉඩම්, සම්පත් වෙත ප්‍රවේශය සහ අනුග්‍රාහකයන් සමඟ සම්බන්ධ වන්න" data-ta="நிலம், வளங்களை அணுகவும் மற்றும் நிதியுதவியாளர்களுடன் இணைக்கவும்">Access land, resources, and connect with sponsors</p>
+                    <button class="signin-button" onclick="signIn('farmer')" data-en="Sign In as Farmer" data-si="ගොවියෙකු ලෙස පුරන්න" data-ta="விவசாயியாக உள்நுழைக">Sign In as Farmer</button>
+                </div>
+                
+                <div class="signin-card">
+                    <div class="signin-icon">🏡</div>
+                    <h3 data-en="Landowner" data-si="ඉඩම් හිමියා" data-ta="நில உரிமையாளர்">Landowner</h3>
+                    <p data-en="List your land and collaborate with farmers" data-si="ඔබගේ ඉඩම ලැයිස්තුගත කර ගොවීන් සමඟ සහයෝගීව කටයුතු කරන්න" data-ta="உங்கள் நிலத்தை பட்டியலிட்டு விவசாயிகளுடன் ஒத்துழைக்கவும்">List your land and collaborate with farmers</p>
+                    <button class="signin-button" onclick="signIn('landowner')" data-en="Sign In as Landowner" data-si="ඉඩම් හිමියෙකු ලෙස පුරන්න" data-ta="நில உரிமையாளராக உள்நுழைக">Sign In as Landowner</button>
+                </div>
+                
+                <div class="signin-card">
+                    <div class="signin-icon">💼</div>
+                    <h3 data-en="Sponsor" data-si="අනුග්‍රාහකයා" data-ta="நிதியுதவியாளர்">Sponsor</h3>
+                    <p data-en="Support farmers and track your investments" data-si="ගොවීන්ට සහාය වන්න සහ ඔබගේ ආයෝජන නිරීක්ෂණය කරන්න" data-ta="விவசாயிகளுக்கு ஆதரவளித்து உங்கள் முதலீடுகளைக் கண்காணிக்கவும்">Support farmers and track your investments</p>
+                    <button class="signin-button" onclick="signIn('sponsor')" data-en="Sign In as Sponsor" data-si="අනුග්‍රාහකයෙකු ලෙස පුරන්න" data-ta="நிதியுதவியாளராக உள்நுழைக">Sign In as Sponsor</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="© 2024 Aswenna (අස්වැන්න). Empowering Sri Lanka's Agricultural Community." data-si="© 2024 අස්වැන්න. ශ්‍රී ලංකාවේ කෘෂිකාර්මික ප්‍රජාව සවිබල ගැන්වීම." data-ta="© 2024 அஸ்வென்னா. இலங்கையின் விவசாய சமூகத்தை மேம்படுத்துதல்.">© 2024 Aswenna (අස්වැන්න). Empowering Sri Lanka's Agricultural Community.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
