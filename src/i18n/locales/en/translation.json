@@ -1,0 +1,92 @@
+{
+  "common": {
+    "appName": "Aswenna",
+    "welcome": "Welcome to Aswenna",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "language": "Language"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "profile": "Profile",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "elink": "E-Link Network"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "selectRole": "Select Your Role",
+    "farmer": "Farmer",
+    "landowner": "Landowner",
+    "sponsor": "Sponsor"
+  },
+  "intro": {
+    "title": "Digital Bridge for Sustainable Agriculture",
+    "subtitle": "Connecting Farmers, Landowners, and Sponsors",
+    "description": "Aswenna empowers Sri Lanka's farming community through technology, promoting sustainable agriculture and efficient resource management.",
+    "getStarted": "Get Started",
+    "skipIntro": "Skip Intro"
+  },
+  "farmer": {
+    "dashboard": "Farmer Dashboard",
+    "myCrops": "My Crops",
+    "addCrop": "Add Crop",
+    "myLand": "My Land Associations",
+    "sponsorOffers": "Sponsor Offers",
+    "cropManagement": "Crop Management"
+  },
+  "landowner": {
+    "dashboard": "Landowner Dashboard",
+    "myPlots": "My Plots",
+    "addPlot": "Add Plot",
+    "farmerRequests": "Farmer Requests",
+    "utilization": "Land Utilization",
+    "approve": "Approve",
+    "reject": "Reject"
+  },
+  "sponsor": {
+    "dashboard": "Sponsor Hub",
+    "browseProjects": "Browse Projects",
+    "myPledges": "My Pledges",
+    "createPledge": "Create Pledge",
+    "impact": "Impact Tracking",
+    "fundProject": "Fund Project"
+  },
+  "project": {
+    "title": "Projects",
+    "create": "Create Project",
+    "details": "Project Details",
+    "budget": "Budget",
+    "timeline": "Timeline",
+    "status": "Status",
+    "active": "Active",
+    "completed": "Completed",
+    "pending": "Pending"
+  },
+  "validation": {
+    "required": "This field is required",
+    "emailInvalid": "Please enter a valid email",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordMatch": "Passwords must match"
+  }
+}
