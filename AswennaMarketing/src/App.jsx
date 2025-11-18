@@ -3,6 +3,7 @@ import './App.css';
 import About from "./Pages/about";
 import Contact from "./Pages/Contact";
 import Index from "./Pages/index";
+import Services from "./Pages/Services";
 
 function App() {
   return (
