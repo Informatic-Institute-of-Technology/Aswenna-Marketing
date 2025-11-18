@@ -1,8 +1,12 @@
+import Hero from '../Components/Hero'
 import Navigation from '../Components/Navigation'
 
 const Index = () => {
   return (
-    <Navigation />
+    <>
+      <Navigation />
+      <Hero />
+    </>
   )
 }
 

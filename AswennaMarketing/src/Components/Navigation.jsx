@@ -2,13 +2,14 @@ import { NavLink } from "./NavLink";
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top border-bottom" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', backdropFilter: 'blur(10px)' }}>
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top border-bottom" style={{ backgroundColor: '#000000' }}>
       <div className="container">
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
           <div className="rounded-circle bg-primary d-flex align-items-center justify-content-center me-2" style={{ width: '40px', height: '40px' }}>
-            <span className="text-white fw-bold fs-5">A</span>
+            <span className="text-white fw-bold fs-5">අ</span>
           </div>
-          <span className="fs-5 fw-bold text-dark">Aswenna</span>
+          <span className="fs-5 fw-bold text-white">අස්වැන්න</span>
+
         </NavLink>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -20,8 +21,8 @@ const Navigation = () => {
             <li className="nav-item">
               <NavLink
                 to="/"
-                className="nav-link text-secondary"
-                activeClassName="text-primary fw-semibold"
+                className="nav-link text-white"
+                activeClassName="text-white fw-semibold"
               >
                 Home
               </NavLink>
@@ -29,8 +30,8 @@ const Navigation = () => {
             <li className="nav-item">
               <NavLink
                 to="/about"
-                className="nav-link text-secondary"
-                activeClassName="text-primary fw-semibold"
+                className="nav-link text-white"
+                activeClassName="text-white fw-semibold"
               >
                 About
               </NavLink>
@@ -38,8 +39,8 @@ const Navigation = () => {
             <li className="nav-item">
               <NavLink
                 to="/services"
-                className="nav-link text-secondary"
-                activeClassName="text-primary fw-semibold"
+                className="nav-link text-white"
+                activeClassName="text-white fw-semibold"
               >
                 Services
               </NavLink>
@@ -47,8 +48,8 @@ const Navigation = () => {
             <li className="nav-item">
               <NavLink
                 to="/contact"
-                className="nav-link text-secondary"
-                activeClassName="text-primary fw-semibold"
+                className="nav-link text-white"
+                activeClassName="text-white fw-semibold"
               >
                 Contact
               </NavLink>
