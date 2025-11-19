@@ -1,4 +1,5 @@
 import { NavLink } from "./NavLink";
+import './CSS/Hero.css'
 
 const Navigation = () => {
   return (
