@@ -13,7 +13,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top" style={{ backgroundColor: '#000000', boxShadow: '0 4px 6px rgba(179, 179, 179, 0.3)' }}>
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top" style={{ backgroundColor: '#000000', boxShadow: '0 0 7px 0 #ffffff70' }}>
       <div className="container-fluid px-4 px-lg-5">
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
           <div
