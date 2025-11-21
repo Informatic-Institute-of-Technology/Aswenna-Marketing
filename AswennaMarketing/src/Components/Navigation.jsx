@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import LanguageToggle from './LanguageToggle';
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -62,14 +65,14 @@ const Navigation = () => {
         </button>
 
         <div className={`collapse navbar-collapse justify-content-end ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav gap-4">
+          <ul className="navbar-nav gap-4 align-items-center">
             <li className="nav-item">
               <NavLink
                 to="/"
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
               >
-                Home
+                {t('nav.home')}
               </NavLink>
             </li>
             <li className="nav-item">
@@ -78,7 +81,7 @@ const Navigation = () => {
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
               >
-                About
+                {t('nav.about')}
               </NavLink>
             </li>
             <li className="nav-item">
@@ -87,7 +90,7 @@ const Navigation = () => {
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
               >
-                Services
+                {t('nav.services')}
               </NavLink>
             </li>
             <li className="nav-item">
@@ -96,8 +99,11 @@ const Navigation = () => {
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
               >
-                Contact
+                {t('nav.contact')}
               </NavLink>
+            </li>
+            <li className="nav-item">
+              <LanguageToggle />
             </li>
           </ul>
         </div>

@@ -1,13 +1,15 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const BenefitsSection = () => {
+    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState('farmers');
 
     const benefitsData = {
         farmers: [
             {
-                title: "Increase Your Yield",
-                description: "Utilize advanced analytics and recommendations to maximize your harvest and profits.",
+                titleKey: "benefits.increaseYield.title",
+                descriptionKey: "benefits.increaseYield.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M12 2v6m0 0a5 5 0 0 1 5 5m-5-5a5 5 0 0 0-5 5m10 0a5 5 0 0 1-5 5m5-5H7m5 5v8" />
@@ -15,8 +17,8 @@ const BenefitsSection = () => {
                 )
             },
             {
-                title: "Find Suitable Land",
-                description: "Discover and lease available land perfectly suited for your crop needs.",
+                titleKey: "benefits.findLand.title",
+                descriptionKey: "benefits.findLand.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -25,8 +27,8 @@ const BenefitsSection = () => {
                 )
             },
             {
-                title: "Access Secure Funding",
-                description: "Connect with investors who are ready to fund your agricultural projects.",
+                titleKey: "benefits.secureFunding.title",
+                descriptionKey: "benefits.secureFunding.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="3" y="7" width="18" height="13" rx="2" ry="2" />
@@ -38,8 +40,8 @@ const BenefitsSection = () => {
         ],
         investors: [
             {
-                title: "Increase Your Yield",
-                description: "Utilize advanced analytics and recommendations to maximize your harvest and profits.",
+                titleKey: "benefits.increaseYield.title",
+                descriptionKey: "benefits.increaseYield.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M12 2v6m0 0a5 5 0 0 1 5 5m-5-5a5 5 0 0 0-5 5m10 0a5 5 0 0 1-5 5m5-5H7m5 5v8" />
@@ -47,8 +49,8 @@ const BenefitsSection = () => {
                 )
             },
             {
-                title: "Find Suitable Land",
-                description: "Discover and lease available land perfectly suited for your crop needs.",
+                titleKey: "benefits.findLand.title",
+                descriptionKey: "benefits.findLand.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -57,8 +59,8 @@ const BenefitsSection = () => {
                 )
             },
             {
-                title: "Access Secure Funding",
-                description: "Connect with investors who are ready to fund your agricultural projects.",
+                titleKey: "benefits.secureFunding.title",
+                descriptionKey: "benefits.secureFunding.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="3" y="7" width="18" height="13" rx="2" ry="2" />
@@ -70,8 +72,8 @@ const BenefitsSection = () => {
         ],
         landowners: [
             {
-                title: "Increase Your Yield",
-                description: "Utilize advanced analytics and recommendations to maximize your harvest and profits.",
+                titleKey: "benefits.increaseYield.title",
+                descriptionKey: "benefits.increaseYield.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M12 2v6m0 0a5 5 0 0 1 5 5m-5-5a5 5 0 0 0-5 5m10 0a5 5 0 0 1-5 5m5-5H7m5 5v8" />
@@ -79,8 +81,8 @@ const BenefitsSection = () => {
                 )
             },
             {
-                title: "Find Suitable Land",
-                description: "Discover and lease available land perfectly suited for your crop needs.",
+                titleKey: "benefits.findLand.title",
+                descriptionKey: "benefits.findLand.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -89,8 +91,8 @@ const BenefitsSection = () => {
                 )
             },
             {
-                title: "Access Secure Funding",
-                description: "Connect with investors who are ready to fund your agricultural projects.",
+                titleKey: "benefits.secureFunding.title",
+                descriptionKey: "benefits.secureFunding.description",
                 icon: (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="3" y="7" width="18" height="13" rx="2" ry="2" />
@@ -111,10 +113,10 @@ const BenefitsSection = () => {
     return (
         <div className="text-white pb-5 px-3" style={{ backgroundColor: '#000000' }}>
             <div className="container">
-                <h4 className="text-secondary mb-2">Our Core Features</h4>
-                <h2 className="display-5 fw-bold mb-3">Benefits for you</h2>
+                <h4 className="text-secondary mb-2">{t('benefits.subtitle')}</h4>
+                <h2 className="display-5 fw-bold mb-3">{t('benefits.title')}</h2>
                 <p className="lead mb-4 text-white">
-                    Whether you are a farmer, landowner or investor, Aswenna provides tailored advantages to help you succeed
+                    {t('benefits.description')}
                 </p>
 
                 <ul className="nav nav-pills mb-4 mt-5" style={{ borderBottom: '1px solid #444' }}>
@@ -130,7 +132,7 @@ const BenefitsSection = () => {
                             }}
                             onClick={() => setActiveTab('farmers')}
                         >
-                            For Farmers
+                            {t('benefits.farmers')}
                         </button>
                     </li>
                     <li className="nav-item">
@@ -145,7 +147,7 @@ const BenefitsSection = () => {
                             }}
                             onClick={() => setActiveTab('investors')}
                         >
-                            For Investors
+                            {t('benefits.investors')}
                         </button>
                     </li>
                     <li className="nav-item">
@@ -160,7 +162,7 @@ const BenefitsSection = () => {
                             }}
                             onClick={() => setActiveTab('landowners')}
                         >
-                            For Landowners
+                            {t('benefits.landowners')}
                         </button>
                     </li>
                 </ul>                <div className="row g-4">
@@ -170,8 +172,8 @@ const BenefitsSection = () => {
                                 <div className="mb-3" style={{ color: '#C7DDC5' }}>
                                     {benefit.icon}
                                 </div>
-                                <h5 className="fw-semibold mb-3" style={{ color: '#ffffff' }}>{benefit.title}</h5>
-                                <p className="mb-0" style={{ color: '#b8c7b8', fontSize: '0.95rem', lineHeight: '1.6' }}>{benefit.description}</p>
+                                <h5 className="fw-semibold mb-3" style={{ color: '#ffffff' }}>{t(benefit.titleKey)}</h5>
+                                <p className="mb-0" style={{ color: '#b8c7b8', fontSize: '0.95rem', lineHeight: '1.6' }}>{t(benefit.descriptionKey)}</p>
                             </div>
                         </div>
                     ))}

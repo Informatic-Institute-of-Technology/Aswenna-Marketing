@@ -1,19 +1,22 @@
+import { useTranslation } from 'react-i18next';
 import './CallToAction.css';
 
 const CallToAction = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="text-center py-5 px-3 mt-5" style={{ backgroundColor: '#000000' }}>
             <div className="container max-width-lg">
-                <h2 className="display-6 fw-bold text-white mb-3">Ready to Grow with Aswenna?</h2>
+                <h2 className="display-6 fw-bold text-white mb-3">{t('cta.title')}</h2>
                 <p className="lead text-white mb-4">
-                    Sign up today and start your journey towards a more productive and sustainable farming future.
+                    {t('cta.description')}
                 </p>
 
                 <div className="d-flex justify-content-center">
                     <form className="d-flex align-items-center w-100 position-relative" style={{ maxWidth: '500px' }}>
                         <input
                             type="email"
-                            placeholder="Enter your email"
+                            placeholder={t('cta.emailPlaceholder')}
                             className="form-control email-input-placeholder"
                             style={{
                                 backgroundColor: '#2E3829',
@@ -38,7 +41,7 @@ const CallToAction = () => {
                                 fontSize: '1rem'
                             }}
                         >
-                            Join Us
+                            {t('cta.button')}
                         </button>
                     </form>
                 </div>

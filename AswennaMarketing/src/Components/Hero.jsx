@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import heroImage from '../assets/Hero/main.png';
 import './Hero.css';
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="hero-section position-relative overflow-hidden">
             <img
@@ -21,11 +24,10 @@ const Hero = () => {
                     <div className="row justify-content-center">
                         <div className="col-12 col-lg-10 col-xl-8 text-center hero-content px-3">
                             <h1 className="hero-title mb-4">
-                                Cultivating a Sustainable Future with Aswenna
+                                {t('hero.title')}
                             </h1>
                             <p className="hero-subtitle">
-                                Join our collaborative farming ecosystem to enhance productivity,
-                                sustainability, and community engagement in Sri Lankan agriculture.
+                                {t('hero.subtitle')}
                             </p>
                         </div>
                     </div>

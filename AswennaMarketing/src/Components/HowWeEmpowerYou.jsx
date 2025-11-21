@@ -1,23 +1,25 @@
-
+import { useTranslation } from 'react-i18next';
 import Growers from '../assets/HowWeEmpower/Growers 3.png';
 import Opportunity from '../assets/HowWeEmpower/Oppotunity 2.png';
 import Partnership from '../assets/HowWeEmpower/Partnership.png';
 
 const HowWeEmpowerYou = () => {
+    const { t } = useTranslation();
+
     const features = [
         {
-            title: "Productive Partnerships",
-            description: "Landowners can easily list their lands and connect with suitable farmers or investors for mutual growth.",
+            titleKey: "howWeEmpower.productivePartnerships.title",
+            descriptionKey: "howWeEmpower.productivePartnerships.description",
             imagePath: Partnership,
         },
         {
-            title: "Accessible Opportunities",
-            description: "Our platform opens access to a curated list of verified projects with predicted yields.",
+            titleKey: "howWeEmpower.accessibleOpportunities.title",
+            descriptionKey: "howWeEmpower.accessibleOpportunities.description",
             imagePath: Opportunity,
         },
         {
-            title: "Empowered Growers",
-            description: "Access to secure funding and modern tools and recommendations to maximize your harvest.",
+            titleKey: "howWeEmpower.empoweredGrowers.title",
+            descriptionKey: "howWeEmpower.empoweredGrowers.description",
             imagePath: Growers,
         },
     ];
@@ -25,9 +27,9 @@ const HowWeEmpowerYou = () => {
     return (
         <div className="text-white pt-5 pb-5 px-3">
             <div className="container">
-                <h2 className="display-5 fw-bold mb-3">How We Empower You</h2>
+                <h2 className="display-5 fw-bold mb-3">{t('howWeEmpower.title')}</h2>
                 <p className="lead mb-5 text-light">
-                    we are transforming traditional challenges into modern opportunities through technology and  colloaboration, creating a seamless ecosystem for growth
+                    {t('howWeEmpower.description')}
                 </p>
 
                 <div className="row g-4">
@@ -37,15 +39,15 @@ const HowWeEmpowerYou = () => {
                                 <div className="card-img-top" style={{ height: '200px', overflow: 'hidden' }}>
                                     <img
                                         src={feature.imagePath}
-                                        alt={feature.title}
+                                        alt={t(feature.titleKey)}
                                         className="w-100 h-100 object-fit-cover"
                                         style={{ backgroundColor: '#212529' }}
                                     />
                                 </div>
 
                                 <div className="card-body">
-                                    <h5 className="card-title fw-bold" style={{ color: '#ffffffff' }}>{feature.title}</h5>
-                                    <p className="card-text" style={{ color: '#A6BA9E' }}>{feature.description}</p>
+                                    <h5 className="card-title fw-bold" style={{ color: '#ffffffff' }}>{t(feature.titleKey)}</h5>
+                                    <p className="card-text" style={{ color: '#A6BA9E' }}>{t(feature.descriptionKey)}</p>
                                 </div>
                             </div>
                         </div>
