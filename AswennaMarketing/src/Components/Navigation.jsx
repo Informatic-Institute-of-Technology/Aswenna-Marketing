@@ -1,8 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -13,14 +30,23 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top" style={{ backgroundColor: '#000000', boxShadow: '0 0 7px 0 #ffffff70' }}>
+    <nav
+      className="navbar navbar-expand-md navbar-dark fixed-top"
+      style={{
+        backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.1)' : '#000000',
+        backdropFilter: scrolled ? 'blur(10px)' : 'none',
+        WebkitBackdropFilter: scrolled ? 'blur(10px)' : 'none',
+        boxShadow: '0 0 7px 0 #ffffff70',
+        transition: 'all 0.3s ease'
+      }}
+    >
       <div className="container-fluid px-4 px-lg-5">
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
           <div
-            className="rounded-circle bg-primary d-flex align-items-center justify-content-center me-2"
-            style={{ width: '40px', height: '40px' }}
+            className="rounded-circle d-flex align-items-center justify-content-center me-2"
+            style={{ width: '40px', height: '40px', backgroundColor: '#C7DDC5' }}
           >
-            <span className="text-white fw-bold fs-5">A</span>
+            <span className="text-black fw-bold fs-5">A</span>
           </div>
           <span className="fs-5 fw-bold text-white">Aswenna</span>
         </NavLink>
