@@ -1,32 +1,36 @@
+import heroImage from '../assets/Hero/main.png';
+import './Hero.css';
 
 const Hero = () => {
     return (
-        <div className="hero min-vh-100 d-flex align-items-center justify-content-center bg-dark">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-6 col-md-8 col-sm-12 col-12 text-center">
-                        <h1 className="display-4 fw-bold text-white">
-                            Future with Aswenna
+        <div className="hero-section position-relative overflow-hidden" style={{ minHeight: '100vh' }}>
+            <img
+                src={heroImage}
+                alt="Farming - Sustainable Agriculture"
+                className="hero-image position-absolute top-0 start-0 w-100 h-100"
+                style={{ objectFit: 'cover', objectPosition: 'center', zIndex: 1 }}
+            />
+
+            <div
+                className="hero-overlay position-absolute top-0 start-0 w-100 h-100"
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: 2 }}
+            ></div>
+
+            <div className="container position-relative" style={{ zIndex: 3 }}>
+                <div className="row min-vh-100 justify-content-center align-items-end py-5">
+                    <div className="col-12 col-lg-10 col-xl-8 text-center hero-content" style={{ paddingBottom: '5rem' }}>
+                        <h1 className="hero-title mb-4">
+                            Cultivating a Sustainable Future with Aswenna
                         </h1>
-                        <p className="lead text-white-50">
-                            Aswenna is a leading provider of digital marketing solutions for small and medium-sized businesses.
+                        <p className="hero-subtitle">
+                            Join our collaborative farming ecosystem to enhance productivity,
+                            sustainability, and community engagement in Sri Lankan agriculture.
                         </p>
-                        <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            <a href="#" className="btn btn-primary btn-lg px-4 me-sm-3">
-                                Get Started
-                            </a>
-                            <a href="#" className="btn btn-outline-light btn-lg px-4">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-4 col-sm-12 col-12 text-center">
-                        <img src="https://via.placeholder.com/500x500" className="img-fluid rounded-start" alt="hero" />
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;
