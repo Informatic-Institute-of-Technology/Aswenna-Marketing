@@ -7,7 +7,7 @@ const Hero = () => {
             <img
                 src={heroImage}
                 alt="Farming - Sustainable Agriculture"
-                className="hero-image position-absolute top-0 start-0 w-100 h-100"
+                className="hero-image position-absolute top-0 start-0 w-100 h-90"
                 style={{ objectFit: 'cover', objectPosition: 'center', zIndex: 1 }}
             />
 
@@ -18,8 +18,8 @@ const Hero = () => {
 
             <div className="container position-relative" style={{ zIndex: 3 }}>
                 <div className="row min-vh-100 justify-content-center align-items-end py-5">
-                    <div className="col-12 col-lg-10 col-xl-8 text-center hero-content" style={{ paddingBottom: '5rem' }}>
-                        <h1 className="hero-title mb-4">
+                    <div className="col-12 col-lg-10 col-xl-8 text-center hero-content" style={{ paddingBottom: '8rem' }}>
+                        <h1 className="hero-title">
                             Cultivating a Sustainable Future with Aswenna
                         </h1>
                         <p className="hero-subtitle">
