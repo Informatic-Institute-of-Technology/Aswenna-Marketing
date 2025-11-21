@@ -99,13 +99,29 @@ html[lang="si"] .lead {
   line-height: 1.5;
 }
 
+html[lang="si"] .hero-subtitle {
+  font-size: calc(1.25rem * 0.95);
+  line-height: 1.6;
+}
+
 html[lang="si"] .nav-link {
   font-size: calc(1rem * 0.88);
 }
 
 html[lang="si"] .btn,
 html[lang="si"] button {
+  font-size: calc(1rem * 0.90);
+  padding: 0.65rem 1.5rem;
+}
+
+html[lang="si"] input,
+html[lang="si"] .form-control {
   font-size: calc(1rem * 0.88);
+}
+
+html[lang="si"] input::placeholder,
+html[lang="si"] .form-control::placeholder {
+  font-size: calc(1rem * 0.85);
 }
 
 html[lang="si"] .display-5 {

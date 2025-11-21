@@ -39,7 +39,7 @@ const Navigation = () => {
         backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.1)' : '#000000',
         backdropFilter: scrolled ? 'blur(10px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(10px)' : 'none',
-        boxShadow: '0 0 7px 0 #ffffff70',
+        boxShadow: '0 0 10px 0 #ffffff70',
         transition: 'all 0.3s ease'
       }}
     >
