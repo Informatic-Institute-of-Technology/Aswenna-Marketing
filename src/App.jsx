@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 import { motion as Motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/about';
 import Contact from './Pages/Contact';
