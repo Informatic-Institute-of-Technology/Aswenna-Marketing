@@ -111,7 +111,7 @@ const BenefitsSection = () => {
     );
 
     return (
-        <div className="text-white pb-5 px-3" style={{ backgroundColor: '#000000' }}>
+        <div className="text-white pb-5 px-3" style={{ backgroundColor: 'transparent' }}>
             <div className="container">
                 <h4 className="text-secondary mb-2">{t('benefits.subtitle')}</h4>
                 <h2 className="display-5 fw-bold mb-3">{t('benefits.title')}</h2>
@@ -167,7 +167,7 @@ const BenefitsSection = () => {
                     </li>
                 </ul>                <div className="row g-4">
                     {currentBenefits.map((benefit, index) => (
-                        <div key={index} className="col-md-4">
+                        <div key={index} className="col-md-4" data-aos="fade-up" data-aos-delay={300 + (index * 100)}>
                             <div className="p-4 rounded-3 h-100" style={{ backgroundColor: '#2d3e2d', border: '1px solid #3d4e3d' }}>
                                 <div className="mb-3" style={{ color: '#C7DDC5' }}>
                                     {benefit.icon}

@@ -25,17 +25,17 @@ const HowWeEmpowerYou = () => {
     ];
 
     return (
-        <div className="text-white pt-5 pb-5 px-3">
+        <div className="text-white pt-5 pb-5 px-3" style={{ backgroundColor: 'transparent' }}>
             <div className="container">
-                <h2 className="display-5 fw-bold mb-3">{t('howWeEmpower.title')}</h2>
-                <p className="lead mb-5 text-light">
+                <h2 className="display-5 fw-bold mb-3" data-aos="fade-up">{t('howWeEmpower.title')}</h2>
+                <p className="lead mb-5 text-light" data-aos="fade-up" data-aos-delay="100">
                     {t('howWeEmpower.description')}
                 </p>
 
                 <div className="row g-4">
                     {features.map((feature, index) => (
-                        <div key={index} className="col-md-4">
-                            <div className="card text-white h-100 border-0" style={{ backgroundColor: '#000000' }}>
+                        <div key={index} className="col-md-4" data-aos="fade-up" data-aos-delay={200 + (index * 100)}>
+                            <div className="card text-white h-100 border-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', backdropFilter: 'blur(10px)' }}>
                                 <div className="card-img-top" style={{ height: '200px', overflow: 'hidden' }}>
                                     <img
                                         src={feature.imagePath}

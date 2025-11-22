@@ -23,10 +23,10 @@ const Hero = () => {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12 col-lg-10 col-xl-8 text-center hero-content px-3">
-                            <h1 className="hero-title mb-4">
+                            <h1 className="hero-title mb-4" data-aos="fade-up" data-aos-delay="200">
                                 {t('hero.title')}
                             </h1>
-                            <p className="hero-subtitle">
+                            <p className="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
                                 {t('hero.subtitle')}
                             </p>
                         </div>
