@@ -4,6 +4,7 @@ import SectionContainer from '../Components/Layout/SectionContainer';
 // New components for the main body
 import BenefitsSection from '../Components/BenefitsSection';
 import CallToAction from '../Components/CallToAction';
+import Footer from '../Components/Footer';
 import HowWeEmpowerYou from '../Components/HowWeEmpowerYou';
 
 
@@ -21,6 +22,7 @@ const Home = () => {
             </SectionContainer>
 
             <CallToAction />
+            <Footer />
         </MainLayout>
     );
 };
