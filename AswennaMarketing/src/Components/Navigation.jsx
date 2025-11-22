@@ -71,6 +71,7 @@ const Navigation = () => {
                 to="/"
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
+                style={{ cursor: 'pointer' }}
               >
                 {t('nav.home')}
               </NavLink>
@@ -80,6 +81,7 @@ const Navigation = () => {
                 to="/about"
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
+                style={{ cursor: 'pointer' }}
               >
                 {t('nav.about')}
               </NavLink>
@@ -89,6 +91,7 @@ const Navigation = () => {
                 to="/services"
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
+                style={{ cursor: 'pointer' }}
               >
                 {t('nav.services')}
               </NavLink>
@@ -98,6 +101,7 @@ const Navigation = () => {
                 to="/contact"
                 className={({ isActive }) => `nav-link text-white ${isActive ? 'fw-semibold' : ''}`}
                 onClick={closeMenu}
+                style={{ cursor: 'pointer' }}
               >
                 {t('nav.contact')}
               </NavLink>
