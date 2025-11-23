@@ -31,10 +31,21 @@ const Hero = () => {
                             </p>
                             <div className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="600">
                                 <div className="ai-powered-badge">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                                        <rect x="9" y="9" width="6" height="6" rx="1"></rect>
-                                        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"></path>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="gemini-logo">
+                                        <defs>
+                                            <linearGradient id="gemini-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" className="stop1">
+                                                    <animate attributeName="stop-color" values="#4285f4;#9b72cb;#d96570;#f4b400;#0f9d58;#4285f4" dur="4s" repeatCount="indefinite" />
+                                                </stop>
+                                                <stop offset="50%" className="stop2">
+                                                    <animate attributeName="stop-color" values="#9b72cb;#d96570;#f4b400;#0f9d58;#4285f4;#9b72cb" dur="4s" repeatCount="indefinite" />
+                                                </stop>
+                                                <stop offset="100%" className="stop3">
+                                                    <animate attributeName="stop-color" values="#d96570;#f4b400;#0f9d58;#4285f4;#9b72cb;#d96570" dur="4s" repeatCount="indefinite" />
+                                                </stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#gemini-gradient)" />
                                     </svg>
                                     <span>AI Powered</span>
                                 </div>
