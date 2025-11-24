@@ -1,0 +1,412 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Main Container */
+.info-page {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f683b 0%, #1f6d3d 50%, rgb(43, 124, 47) 100%);
+  overflow: hidden;
+}
+
+.info-header {
+  position: relative;
+  width: 100%;
+  height: 22vh;
+  min-height: 140px;
+  z-index: 1;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: calc(22vh - 55px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.info-curved-section {
+  position: absolute;
+  top: 22vh;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  z-index: 2;
+}
+
+.info-curve-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.black-extension {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(135vh - 22vh - 60vh);
+  background: #000000;
+  z-index: 1;
+}
+
+.info-content-wrapper {
+  position: absolute;
+  top: 22vh;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 22vh);
+  z-index: 3;
+  overflow: hidden;
+}
+
+.info-content {
+  position: relative;
+  z-index: 3;
+  padding: 150px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.info-title-section {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.info-main-title {
+  font-family: "Noto Serif Sinhala", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 15px;
+  line-height: 1.6;
+}
+
+.info-sub-title {
+  font-family: "Noto Serif Sinhala", serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.info-description {
+  font-family: "Noto Serif Sinhala", serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Benefits Card */
+.benefits-card {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(128, 128, 128, 0.25);
+  border-radius: 20px;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Benefit Item */
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.check-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit-text {
+  flex: 1;
+}
+
+.benefit-title {
+  font-family: "Noto Serif Sinhala", serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #4caf50;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.benefit-description {
+  font-family: "Noto Serif Sinhala", serif;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Continue Button */
+.continue-button {
+  font-family: "Noto Serif Sinhala", serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+  background: #4caf50;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+  margin-top: -0.5rem;
+}
+
+.continue-button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+}
+
+.continue-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-header {
+    height: 20vh;
+    min-height: 120px;
+  }
+
+  .logo-wrapper {
+    top: calc(20vh - 45px);
+  }
+
+  .info-logo {
+    width: 90px;
+    height: 90px;
+    padding: 8px;
+  }
+
+  .info-curved-section {
+    top: 20vh;
+    height: 55vh;
+  }
+
+  .black-extension {
+    height: calc(100vh - 20vh - 55vh);
+  }
+
+  .info-content-wrapper {
+    top: 20vh;
+    height: calc(100vh - 20vh);
+  }
+
+  .info-content {
+    padding: 130px 20px 50px;
+    gap: 24px;
+  }
+
+  .info-main-title {
+    font-size: 1.3em;
+  }
+
+  .info-sub-title {
+    font-size: 1em;
+  }
+
+  .benefits-card {
+    padding: 22px 15px;
+    gap: 20px;
+  }
+
+  .info-description {
+    font-size: 0.9em;
+  }
+
+  .benefits-card {
+    padding: 22px 15px;
+    gap: 20px;
+  }
+
+  .check-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .benefit-title {
+    font-size: 0.9em;
+  }
+
+  .benefit-description {
+    font-size: 0.82em;
+  }
+
+  .continue-button {
+    font-size: 1em;
+    padding: 13px 40px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-header {
+    height: 18vh;
+    min-height: 110px;
+  }
+
+  .logo-wrapper {
+    top: calc(18vh - 38px);
+  }
+
+  .info-logo {
+    width: 75px;
+    height: 75px;
+    padding: 7px;
+  }
+
+  .info-curved-section {
+    top: 18vh;
+    height: 50vh;
+  }
+
+  .black-extension {
+    height: calc(100vh - 18vh - 50vh);
+  }
+
+  .info-content-wrapper {
+    top: 18vh;
+    height: calc(100vh - 18vh);
+  }
+
+  .info-content {
+    padding: 110px 15px 45px;
+    gap: 20px;
+  }
+
+  .benefits-card {
+    padding: 18px 12px;
+    gap: 18px;
+  }
+
+  .info-title-section {
+    padding: 0 10px;
+  }
+
+  .info-main-title {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+
+  .info-sub-title {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+  }
+
+  .info-description {
+    font-size: 0.85em;
+  }
+
+  .benefits-card {
+    padding: 18px 12px;
+    gap: 18px;
+  }
+
+  .check-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .benefit-title {
+    font-size: 0.88em;
+  }
+
+  .benefit-description {
+    font-size: 0.78em;
+  }
+
+  .continue-button {
+    padding: 12px 35px;
+    font-size: 0.95em;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .info-header {
+    min-height: 100px;
+  }
+
+  .logo-wrapper {
+    top: calc(18vh - 35px);
+  }
+
+  .info-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .info-curved-section {
+    height: 48vh;
+  }
+
+  .black-extension {
+    height: calc(100vh - 18vh - 48vh);
+  }
+
+  .info-content {
+    padding: 100px 12px 40px;
+  }
+
+  .benefits-card {
+    padding: 16px 10px;
+    gap: 16px;
+  }
+
+  .benefit-item {
+    gap: 12px;
+  }
+
+  .info-main-title {
+    font-size: 1.1em;
+  }
+
+  .benefits-card {
+    padding: 16px 10px;
+    gap: 16px;
+  }
+
+  .benefit-item {
+    gap: 12px;
+  }
+}
