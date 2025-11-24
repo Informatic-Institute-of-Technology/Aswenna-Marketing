@@ -1,0 +1,234 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Main Container */
+.splash-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 50%, #2e7d32 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  overflow: hidden;
+}
+
+.splash-container.visible {
+  opacity: 1;
+}
+
+/* Content Container - Centered */
+.splash-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  animation: logoFadeIn 1s ease-out;
+}
+
+@keyframes logoFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.splash-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  animation: logoPulse 2s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.app-type {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Bottom Curve Section - Fixed to Bottom */
+.bottom-curve {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.curve-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Bottom Content */
+.bottom-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px 20px 50px;
+  gap: 15px;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* Title Styles */
+.splash-title {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Noto Serif Sinhala", serif;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Subtitle Styles */
+.splash-subtitle {
+  font-size: 1em;
+  margin: 0;
+  font-family: "Noto Serif Sinhala", serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Loading Bar Container */
+.loading-bar-container {
+  width: 80%;
+  max-width: 300px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 15px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loading-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #66bb6a, #4caf50);
+  background-size: 200% 100%;
+  border-radius: 10px;
+  transition: width 0.1s ease-out;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Powered By Text */
+.powered-by {
+  font-family: "Noto Serif Sinhala", serif;
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .splash-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .app-type {
+    font-size: 1em;
+  }
+
+  .splash-title {
+    font-size: 2em;
+  }
+
+  .splash-subtitle {
+    font-size: 0.9em;
+  }
+
+  .bottom-curve {
+    height: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .app-type {
+    font-size: 0.9em;
+  }
+
+  .splash-title {
+    font-size: 1.8em;
+  }
+
+  .splash-subtitle {
+    font-size: 0.85em;
+  }
+
+  .loading-bar-container {
+    width: 70%;
+  }
+
+  .bottom-content {
+    padding: 30px 15px 20px;
+  }
+}

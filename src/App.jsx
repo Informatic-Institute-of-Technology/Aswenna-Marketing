@@ -9,11 +9,13 @@ import About from './Pages/about';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Services from './Pages/Services';
+import SplashScreen from './Pages/Splash';
 
 function AppContent() {
   const { i18n } = useTranslation();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [theme, setTheme] = useState('dark');
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -54,6 +56,14 @@ function AppContent() {
   const cursorGradient = theme === 'dark'
     ? `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(92, 237, 18, 0.05), rgba(45, 62, 45, 0.08), rgba(0, 0, 0, 1))`
     : `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(92, 237, 18, 0.08), rgba(213, 237, 208, 0.15), rgba(248, 253, 245, 1))`;
+
+  const handleLoadingComplete = () => {
+    setShowSplash(false);
+  };
+
+  if (showSplash) {
+    return <SplashScreen onLoadingComplete={handleLoadingComplete} />;
+  }
 
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
