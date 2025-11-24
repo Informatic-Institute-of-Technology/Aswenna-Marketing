@@ -68,7 +68,7 @@ const InfoPage = ({ onContinue }) => {
                                     </svg>
                                 </div>
                                 <div className="benefit-text">
-                                    <h3 className="benefit-title">{benefit.title}</h3>
+                                    <h3 className="benefit-title fw-bold" style={{ fontWeight: '800' }}>{benefit.title}</h3>
                                     <p className="benefit-description">{benefit.description}</p>
                                 </div>
                             </div>
