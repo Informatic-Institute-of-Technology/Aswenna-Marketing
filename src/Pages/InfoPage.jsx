@@ -54,7 +54,7 @@ const InfoPage = ({ onContinue }) => {
                             (Aswenna සමඟ සාර්ථක ගමනක්)
                         </h2>
                         <p className="info-description">
-                            Aswenna ඔබට ලබාදෙන ප්‍රමුඛ ප්‍රයෝජන
+                            - Aswenna ඔබට ලබාදෙන ප්‍රමුඛ ප්‍රයෝජන -
                         </p>
                     </div>
 

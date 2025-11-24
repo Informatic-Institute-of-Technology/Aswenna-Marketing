@@ -6,11 +6,10 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #4caf50 0%, #45a049 50%, #2e7d32 100%);
+  background: linear-gradient(135deg, #1f683b 0%, #1f6d3d 50%, rgb(43, 124, 47) 100%);
   overflow: hidden;
 }
 
-/* Header Section - Green Area */
 .info-header {
   position: relative;
   width: 100%;
