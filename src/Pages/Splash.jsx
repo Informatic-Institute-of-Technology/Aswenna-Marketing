@@ -8,7 +8,7 @@ const SplashScreen = ({ onLoadingComplete }) => {
 
     useEffect(() => {
         setTimeout(() => setIsVisible(true), 100);
-        const duration = 5000;
+        const duration = 7000;
         const intervalTime = 50;
         const increment = (100 / duration) * intervalTime;
 

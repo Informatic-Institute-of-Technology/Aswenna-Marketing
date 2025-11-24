@@ -101,7 +101,6 @@ function AppContent() {
         }}
       />
 
-      {/* Guest Label near cursor */}
       <Motion.div
         className="custom-cursor-label"
         animate={{
