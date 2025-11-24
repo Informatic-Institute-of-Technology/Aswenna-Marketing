@@ -58,8 +58,8 @@ function AppContent() {
   }, []);
 
   const cursorGradient = theme === 'dark'
-    ? `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(92, 237, 18, 0.05), rgba(45, 62, 45, 0.08), rgba(0, 0, 0, 1))`
-    : `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(92, 237, 18, 0.08), rgba(213, 237, 208, 0.15), rgba(248, 253, 245, 1))`;
+    ? `radial-gradient(700px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(92, 237, 18, 0.15), rgba(45, 62, 45, 0.18), rgba(0, 0, 0, 1))`
+    : `radial-gradient(700px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(92, 237, 18, 0.18), rgba(213, 237, 208, 0.25), rgba(248, 253, 245, 1))`;
 
   const handleLoadingComplete = () => {
     setShowSplash(false);
@@ -87,7 +87,7 @@ function AppContent() {
           background: cursorGradient
         }}
         transition={{
-          duration: 1.2,
+          duration: 0.8,
           ease: "easeOut"
         }}
         style={{
