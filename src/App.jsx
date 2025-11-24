@@ -16,7 +16,9 @@ function AppContent() {
   const { i18n } = useTranslation();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [theme, setTheme] = useState('dark');
-  const [showSplash, setShowSplash] = useState(true);
+
+  const hasCompletedFirstVisit = localStorage.getItem('hasCompletedFirstVisit') === 'true';
+  const [showSplash, setShowSplash] = useState(!hasCompletedFirstVisit);
   const [showInfo, setShowInfo] = useState(false);
 
   useEffect(() => {
@@ -65,6 +67,7 @@ function AppContent() {
   };
 
   const handleInfoComplete = () => {
+    localStorage.setItem('hasCompletedFirstVisit', 'true');
     setShowInfo(false);
   };
 
