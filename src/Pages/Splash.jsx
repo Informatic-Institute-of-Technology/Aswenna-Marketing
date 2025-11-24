@@ -46,7 +46,7 @@ const SplashScreen = ({ onLoadingComplete }) => {
 
             <div className="bottom-curve">
                 <svg className="curve-shape" viewBox="0 0 1440 600" preserveAspectRatio="none">
-                    <path fill="#000000" d="M0,600 Q720,50 1440,600 L1440,600 L0,600 Z"></path>
+                    <path fill="#000000" d="M0,600 Q720,0 1440,600 L1440,600 L0,600 Z"></path>
                 </svg>
 
                 <div className="bottom-content">

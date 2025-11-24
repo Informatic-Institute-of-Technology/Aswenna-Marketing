@@ -8,6 +8,7 @@ import './App.css';
 import About from './Pages/about';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
+import InfoPage from './Pages/InfoPage';
 import Services from './Pages/Services';
 import SplashScreen from './Pages/Splash';
 
@@ -16,6 +17,7 @@ function AppContent() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [theme, setTheme] = useState('dark');
   const [showSplash, setShowSplash] = useState(true);
+  const [showInfo, setShowInfo] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -59,10 +61,19 @@ function AppContent() {
 
   const handleLoadingComplete = () => {
     setShowSplash(false);
+    setShowInfo(true);
+  };
+
+  const handleInfoComplete = () => {
+    setShowInfo(false);
   };
 
   if (showSplash) {
     return <SplashScreen onLoadingComplete={handleLoadingComplete} />;
+  }
+
+  if (showInfo) {
+    return <InfoPage onContinue={handleInfoComplete} />;
   }
 
   return (
