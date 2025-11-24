@@ -1,7 +1,5 @@
-/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
 
-/* Main Container */
 .info-page {
   position: fixed;
   width: 100vw;
@@ -120,7 +118,6 @@
   line-height: 1.6;
 }
 
-/* Benefits Card */
 .benefits-card {
   width: 100%;
   max-width: 650px;
@@ -135,7 +132,6 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Benefit Item */
 .benefit-item {
   display: flex;
   align-items: flex-start;
@@ -175,7 +171,6 @@
   line-height: 1.6;
 }
 
-/* Continue Button */
 .continue-button {
   font-family: "Noto Serif Sinhala", serif;
   font-size: 1.1em;
@@ -201,7 +196,6 @@
   transform: translateY(0);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .info-header {
     height: 20vh;

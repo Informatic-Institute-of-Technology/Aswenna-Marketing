@@ -95,7 +95,6 @@ html[lang="si"] * {
   font-family: "Noto Serif Sinhala", "Poppins", sans-serif;
 }
 
-/* Sinhala text scaled to 88% of English sizes to maintain hierarchy */
 html[lang="si"] h1 {
   font-size: calc(2.5rem * 0.88);
   line-height: 1.3;

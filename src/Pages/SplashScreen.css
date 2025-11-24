@@ -1,7 +1,5 @@
-/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
 
-/* Main Container */
 .splash-container {
   position: fixed;
   top: 0;
@@ -28,7 +26,6 @@
   opacity: 1;
 }
 
-/* Content Container - Centered */
 .splash-content {
   flex: 1;
   display: flex;
@@ -39,7 +36,6 @@
   padding: 20px;
 }
 
-/* Logo Container */
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -89,7 +85,6 @@
   letter-spacing: 1px;
 }
 
-/* Bottom Curve Section - Fixed to Bottom */
 .bottom-curve {
   position: fixed;
   bottom: 0;
@@ -109,7 +104,6 @@
   z-index: 1;
 }
 
-/* Bottom Content */
 .bottom-content {
   position: absolute;
   bottom: 0;
@@ -127,7 +121,6 @@
   pointer-events: auto;
 }
 
-/* Title Styles */
 .splash-title {
   font-size: 2.5em;
   margin: 0;
@@ -138,7 +131,6 @@
   text-align: center;
 }
 
-/* Subtitle Styles */
 .splash-subtitle {
   font-size: 1em;
   margin: 0;
@@ -149,7 +141,6 @@
   letter-spacing: 0.5px;
 }
 
-/* Loading Bar Container */
 .loading-bar-container {
   width: 80%;
   max-width: 300px;
@@ -178,7 +169,6 @@
   }
 }
 
-/* Powered By Text */
 .powered-by {
   font-family: "Noto Serif Sinhala", serif;
   font-size: 0.85em;
@@ -187,7 +177,6 @@
   text-align: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .splash-image {
     width: 150px;
