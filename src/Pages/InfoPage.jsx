@@ -51,7 +51,7 @@ const InfoPage = ({ onContinue }) => {
                             ඔබේ ගොවිතැන / ඉඩම් / ආයෝජන අවස්ථා
                         </h1>
                         <h2 className="info-sub-title">
-                            Aswenna සමඟ සාර්ථක ගමනක්
+                            (Aswenna සමඟ සාර්ථක ගමනක්)
                         </h2>
                         <p className="info-description">
                             Aswenna ඔබට ලබාදෙන ප්‍රමුඛ ප්‍රයෝජන
