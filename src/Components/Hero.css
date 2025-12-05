@@ -127,6 +127,54 @@
   }
 }
 
+.launching-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.4rem;
+  background: transparent;
+  border-radius: 50px;
+  position: relative;
+  overflow: visible;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.launching-soon-badge:hover {
+  transform: translateY(-2px);
+}
+
+.launching-soon-badge::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    #5ced12 0%,
+    #4dd010 20%,
+    #3fb80e 40%,
+    #5ced12 60%,
+    #4dd010 80%,
+    #3fb80e 100%
+  );
+  background-size: 200% 100%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: flowThroughBorder 3s linear infinite;
+  z-index: -1;
+}
+
+.launching-soon-badge span {
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #5ced12;
+}
+
 @media (max-width: 768px) {
   .hero-section {
     margin-top: 4rem;

@@ -165,7 +165,9 @@ const BenefitsSection = () => {
                             {t('benefits.landownersTab')}
                         </button>
                     </li>
-                </ul>                <div className="row g-4">
+                </ul>
+
+                <div className="row g-4">
                     {currentBenefits.map((benefit, index) => (
                         <div key={index} className="col-md-4" data-aos="fade-up" data-aos-delay={300 + (index * 100)}>
                             <div className="p-4 rounded-3 h-100" style={{ backgroundColor: '#2d3e2d', border: '1px solid #3d4e3d' }}>

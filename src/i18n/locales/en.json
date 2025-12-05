@@ -80,5 +80,11 @@
     "description": "Sign up today and start your journey towards a more productive and sustainable farming future.",
     "emailPlaceholder": "Enter your email",
     "button": "Join Us"
+  },
+  "comingSoon": {
+    "badge": "COMING SOON",
+    "title": "Mobile App Launching Soon",
+    "description": "Take Aswenna everywhere you go. Manage your farms, track investments, and connect with partners from your mobile device.",
+    "notifyButton": "Notify Me When Available"
   }
 }

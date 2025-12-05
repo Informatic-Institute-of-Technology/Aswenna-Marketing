@@ -29,7 +29,7 @@ const Hero = () => {
                             <p className="hero-subtitle mb-4" data-aos="fade-up" data-aos-delay="400">
                                 {t('hero.subtitle')}
                             </p>
-                            <div className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="600">
+                            <div className="d-flex flex-column justify-content-center align-items-center gap-3" data-aos="fade-up" data-aos-delay="600">
                                 <div className="ai-powered-badge">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="gemini-logo">
                                         <defs>
@@ -48,6 +48,9 @@ const Hero = () => {
                                         <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#gemini-gradient)" />
                                     </svg>
                                     <span>AI Powered</span>
+                                </div>
+                                <div className="launching-soon-badge">
+                                    <span>🚀 Launching Soon - Get in Touch</span>
                                 </div>
                             </div>
                         </div>

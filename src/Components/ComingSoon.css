@@ -1,0 +1,71 @@
+/* Bell ringing animation */
+@keyframes ringBell {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(20deg);
+  }
+  10% {
+    transform: rotate(-18deg);
+  }
+  15% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-18deg);
+  }
+  25% {
+    transform: rotate(16deg);
+  }
+  30% {
+    transform: rotate(-16deg);
+  }
+  35% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-14deg);
+  }
+  45% {
+    transform: rotate(12deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  55% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  65% {
+    transform: rotate(8deg);
+  }
+  70% {
+    transform: rotate(-8deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+  80% {
+    transform: rotate(-6deg);
+  }
+  85% {
+    transform: rotate(4deg);
+  }
+  90% {
+    transform: rotate(-4deg);
+  }
+  95% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.bell-ring {
+  animation: ringBell 2s ease-in-out;
+  transform-origin: top center;
+}
