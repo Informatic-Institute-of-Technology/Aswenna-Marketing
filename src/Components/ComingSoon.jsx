@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import farmingBg from '../assets/Hero/main.png';
 import './ComingSoon.css';
 
 const ComingSoon = () => {
@@ -6,7 +7,7 @@ const ComingSoon = () => {
     const [isSubscribed, setIsSubscribed] = useState(false);
 
     const handleNotifyClick = () => {
-        if (isRinging || isSubscribed) return; // Prevent multiple clicks
+        if (isRinging || isSubscribed) return;
         setIsRinging(true);
         setTimeout(() => {
             setIsRinging(false);
@@ -25,7 +26,7 @@ const ComingSoon = () => {
                         Transform Your Farming Journey Online
                     </h2>
                     <p className="lead mx-auto" style={{ maxWidth: '700px', color: '#b8c7b8' }}>
-                        Get ready for a revolutionary web-based platform that brings the power of Aswenna to your fingertips
+                        Get ready for a revolutionary Aswenna platform that brings the power of Aswenna to your fingertips
                     </p>
                 </div>
 
@@ -45,9 +46,21 @@ const ComingSoon = () => {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(92, 237, 18, 0.15) 1px, transparent 1px)`,
-                            backgroundSize: '40px 40px',
-                            opacity: 0.3,
+                            backgroundImage: `url(${farmingBg})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            opacity: 0.15,
+                            pointerEvents: 'none'
+                        }}
+                    />
+                    <div
+                        style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(45, 62, 45, 0.7) 100%)',
                             pointerEvents: 'none'
                         }}
                     />
@@ -70,7 +83,7 @@ const ComingSoon = () => {
 
                         <h3 className="display-6 fw-bold mb-3">Aswenna Platform Launching Soon</h3>
                         <p className="lead mb-4 mx-auto" style={{ maxWidth: '600px', color: '#C7DDC5' }}>
-                            Access Aswenna from anywhere. Manage your farms, track investments, and connect with partners through our powerful web platform.
+                            Access Aswenna from anywhere. Manage your farms, track investments, and connect with partners through our powerful platform.
                         </p>
 
                         <div className="d-flex flex-wrap justify-content-center gap-3 mb-4">
