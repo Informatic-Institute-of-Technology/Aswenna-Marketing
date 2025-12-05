@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import farmingBg from '../assets/Hero/main.png';
+import farmingBg from '../assets/HowWeEmpower/CommingSoon.jpg';
 import './ComingSoon.css';
 
 const ComingSoon = () => {
@@ -49,7 +49,7 @@ const ComingSoon = () => {
                             backgroundImage: `url(${farmingBg})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            opacity: 0.15,
+                            opacity: 0.65,
                             pointerEvents: 'none'
                         }}
                     />
