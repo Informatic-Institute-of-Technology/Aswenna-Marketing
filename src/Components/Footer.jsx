@@ -1,17 +1,22 @@
 import { useTranslation } from 'react-i18next';
+import DinujayaImg from '../assets/Team/Dinujaya.jpg';
+import GeethmaImg from '../assets/Team/Geethma.jpg';
+import GithmiImg from '../assets/Team/Githmi.JPG';
+import NethmiImg from '../assets/Team/Nethmi.jpeg';
 import NimsaraImg from '../assets/Team/Nimsara.png';
+import SeshanImg from '../assets/Team/Seshan.jpg';
 import './Footer.css';
 
 const Footer = () => {
     useTranslation();
 
     const developers = [
-        { id: 1, name: 'Nimsara Jayathilaka', role: 'Lead Developer', image: NimsaraImg },
-        { id: 2, name: 'Dinujaya Manodya', role: 'UI/UX Designer', image: NimsaraImg },
-        { id: 3, name: 'Seshan Kavishanka', role: 'Backend Developer', image: NimsaraImg },
-        { id: 4, name: 'Geethma Thuduwaththage', role: 'Frontend Developer', image: NimsaraImg },
-        { id: 5, name: 'Githmi Padigama', role: 'DevOps Engineer', image: NimsaraImg },
-        { id: 6, name: 'Nethmi Dhananjana', role: 'Product Manager', image: NimsaraImg },
+        { id: 1, name: 'Nimsara Jayathilaka', role: 'Developer', image: NimsaraImg },
+        { id: 2, name: 'Dinujaya Manodya', role: 'Developer', image: DinujayaImg },
+        { id: 3, name: 'Seshan Kavishanka', role: 'Backend Developer', image: SeshanImg },
+        { id: 4, name: 'Geethma Thuduwaththage', role: 'Developer', image: GeethmaImg },
+        { id: 5, name: 'Githmi Padigama', role: 'Developer', image: GithmiImg },
+        { id: 6, name: 'Nethmi Dhananjana', role: 'Developer', image: NethmiImg },
     ];
 
     const socialLinks = [

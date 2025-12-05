@@ -29,20 +29,50 @@
     "subtitle": "Our Core Features",
     "title": "Benefits for you",
     "description": "Whether you are a farmer, landowner or investor, Aswenna provides tailored advantages to help you succeed",
-    "farmers": "Farmers",
-    "investors": "Investors",
-    "landowners": "Landowners",
-    "increaseYield": {
-      "title": "Increase Your Yield",
-      "description": "Utilize advanced analytics and recommendations to maximize your harvest and profits."
+    "farmersTab": "Farmers",
+    "investorsTab": "Investors",
+    "landownersTab": "Landowners",
+    "farmers": {
+      "smartFarming": {
+        "title": "Smart Farming Tools",
+        "description": "Access AI-powered insights and modern agricultural technology to optimize your farming operations and increase productivity."
+      },
+      "accessLand": {
+        "title": "Find Quality Land",
+        "description": "Browse and lease verified agricultural lands that match your crop requirements and farming goals."
+      },
+      "getFunding": {
+        "title": "Secure Funding",
+        "description": "Connect with investors ready to fund your projects, providing the capital you need to grow your farming business."
+      }
     },
-    "findLand": {
-      "title": "Find Suitable Land",
-      "description": "Discover and lease available land perfectly suited for your crop needs."
+    "investors": {
+      "diversifyPortfolio": {
+        "title": "Diversify Portfolio",
+        "description": "Invest in sustainable agriculture projects and diversify your investment portfolio with verified farming opportunities."
+      },
+      "trackReturns": {
+        "title": "Track Real-Time Returns",
+        "description": "Monitor your investments with transparent reporting and real-time performance metrics from active farming projects."
+      },
+      "connectFarmers": {
+        "title": "Connect with Farmers",
+        "description": "Build direct relationships with verified farmers and support sustainable agriculture while earning returns."
+      }
     },
-    "secureFunding": {
-      "title": "Access Secure Funding",
-      "description": "Connect with investors who are ready to fund your agricultural projects."
+    "landowners": {
+      "maximizeValue": {
+        "title": "Maximize Land Value",
+        "description": "Turn idle land into productive assets and generate passive income through secure agricultural leasing."
+      },
+      "findTenants": {
+        "title": "Find Verified Tenants",
+        "description": "Connect with reliable, verified farmers who are committed to sustainable and productive land use."
+      },
+      "secureLeases": {
+        "title": "Secure Lease Agreements",
+        "description": "Manage your land with transparent lease agreements and monitoring tools to protect your property interests."
+      }
     }
   },
   "cta": {
