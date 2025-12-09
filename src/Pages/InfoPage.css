@@ -4,13 +4,70 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.info-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     135deg,
-    #1f683b 0%,
-    #1f6d3d 50%,
-    rgb(43, 124, 47) 100%
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(11, 51, 25, 0.25) 100%
   );
-  overflow: hidden;
+  z-index: 1;
+}
+
+.info-language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-language-toggle svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.info-language-toggle:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-language-toggle:hover svg {
+  transform: rotate(180deg);
 }
 
 .info-header {
@@ -36,9 +93,16 @@
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background: white;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   padding: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.info-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .info-curved-section {
@@ -59,13 +123,13 @@
   z-index: 1;
 }
 
-.black-extension {
+.green-extension {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: calc(135vh - 22vh - 60vh);
-  background: #000000;
+  background: #0b3319;
   z-index: 1;
 }
 
@@ -91,104 +155,321 @@
 
 .info-title-section {
   text-align: center;
-  max-width: 600px;
+  max-width: 900px;
   width: 100%;
   padding: 0 15px;
 }
 
+.info-main-flex {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info-benefits-column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-testimonials-column {
+  flex: 0 0 400px;
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .info-main-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-testimonials-column {
+    flex: 1;
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
 .info-main-title {
-  font-family: "Noto Serif Sinhala", serif;
-  font-size: 1.5em;
+  font-family: "Poppins", "Noto Serif Sinhala", sans-serif;
+  font-size: 1.75em;
   font-weight: 700;
-  color: white;
+  color: #ffffff;
   margin: 0 0 15px;
-  line-height: 1.6;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .info-sub-title {
-  font-family: "Noto Serif Sinhala", serif;
-  font-size: 1.1em;
+  font-family: "Poppins", "Noto Serif Sinhala", sans-serif;
+  font-size: 1.2em;
   font-weight: 600;
-  color: white;
+  color: rgba(255, 255, 255, 0.95);
   margin: 0 0 20px;
   line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .info-description {
-  font-family: "Noto Serif Sinhala", serif;
-  font-size: 0.95em;
-  font-weight: 400;
+  font-family: "Poppins", "Noto Serif Sinhala", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   margin: 0;
   line-height: 1.6;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.benefits-card {
+.benefits-slider {
   width: 100%;
   max-width: 650px;
-  background: rgba(128, 128, 128, 0.25);
-  border-radius: 20px;
-  padding: 25px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  border-radius: 24px;
+  padding: 40px 30px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-height: 200px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.benefit-item {
+.benefits-slider:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-color: rgba(76, 175, 80, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+.benefit-slide {
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.95);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateX(-5px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.benefit-item-single {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
 }
 
-.check-icon {
+.benefit-icon {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(76, 175, 80, 0.15) 0%,
+    rgba(76, 175, 80, 0.05) 100%
+  );
+  border-radius: 16px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
 }
 
-.check-icon svg {
+.benefit-icon svg {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.benefits-slider:hover .benefit-icon {
+  transform: scale(1.1);
+  background: linear-gradient(
+    135deg,
+    rgba(76, 175, 80, 0.25) 0%,
+    rgba(76, 175, 80, 0.1) 100%
+  );
+}
+
+.benefits-slider:hover .benefit-icon svg {
+  transform: rotate(5deg);
 }
 
 .benefit-text {
   flex: 1;
 }
 
-.benefit-title {
-  font-family: "Noto Serif Sinhala", serif;
-  font-size: 0.95em;
-  font-weight: 600;
-  color: #4caf50;
-  margin: 0 0 8px;
-  line-height: 1.5;
+.benefit-title-single {
+  font-family: "Poppins", "Noto Serif Sinhala", sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #66bb6a;
+  margin: 0 0 14px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-.benefit-description {
-  font-family: "Noto Serif Sinhala", serif;
-  font-size: 0.85em;
+.benefit-description-single {
+  font-family: "Poppins", "Noto Serif Sinhala", sans-serif;
+  font-size: 1.05em;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.95);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
-.continue-button {
-  font-family: "Noto Serif Sinhala", serif;
-  font-size: 1.1em;
-  font-weight: 600;
-  color: white;
-  background: #4caf50;
-  border: none;
-  border-radius: 25px;
-  padding: 15px 50px;
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
-  margin-top: -0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.2);
+}
+
+.dot.active {
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+  width: 28px;
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.skip-button {
+  font-family: "Poppins", "Noto Serif Sinhala", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  padding: 14px 40px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.02em;
+}
+
+.skip-button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skip-button:active {
+  transform: translateY(0);
+}
+
+.next-button {
+  font-family: "Poppins", "Noto Serif Sinhala", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 14px 45px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4),
+    0 2px 8px rgba(76, 175, 80, 0.2);
+  letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+}
+
+.next-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.next-button:hover::before {
+  left: 100%;
+}
+
+.next-button:hover {
+  background: linear-gradient(135deg, #45a049 0%, #5cb85f 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(76, 175, 80, 0.5),
+    0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.next-button:active {
+  transform: translateY(-1px);
 }
 
 .continue-button:hover {

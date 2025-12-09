@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import logoImage from '../assets/Company/AswennaLogo.png';
+import backgroundImage from '../assets/Splash/SplashBackground.jpg';
 import './SplashScreen.css';
 
 const SplashScreen = ({ onLoadingComplete }) => {
@@ -32,7 +33,8 @@ const SplashScreen = ({ onLoadingComplete }) => {
     }, [onLoadingComplete]);
 
     return (
-        <div className={`splash-container ${isVisible ? 'visible' : ''}`}>
+        <div className={`splash-container ${isVisible ? 'visible' : ''}`} style={{ backgroundImage: `url(${backgroundImage})` }}>
+            <div className="overlay"></div>
             <div className="splash-content">
                 <div className="logo-container">
                     <img
@@ -46,7 +48,14 @@ const SplashScreen = ({ onLoadingComplete }) => {
 
             <div className="bottom-curve">
                 <svg className="curve-shape" viewBox="0 0 1440 600" preserveAspectRatio="none">
-                    <path fill="#000000" d="M0,600 Q720,0 1440,600 L1440,600 L0,600 Z"></path>
+                    <defs>
+                        <linearGradient id="splashGreenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style={{ stopColor: '#0a2f18', stopOpacity: 1 }} />
+                            <stop offset="50%" style={{ stopColor: '#0c351b', stopOpacity: 1 }} />
+                            <stop offset="100%" style={{ stopColor: '#0d3a1d', stopOpacity: 1 }} />
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#splashGreenGradient)" d="M0,600 Q720,0 1440,600 L1440,600 L0,600 Z"></path>
                 </svg>
 
                 <div className="bottom-content">

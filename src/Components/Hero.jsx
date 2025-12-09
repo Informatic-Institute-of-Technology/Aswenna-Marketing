@@ -1,22 +1,67 @@
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import heroImage from '../assets/Hero/main.png';
+import hero1 from '../assets/Hero/Hero1.png';
+import hero2 from '../assets/Hero/Hero2.jpg';
+import hero3 from '../assets/Hero/Hero3.jpg';
+import hero4 from '../assets/Hero/Hero4.jpg';
+import hero5 from '../assets/Hero/Hero5.jpg';
 import './Hero.css';
 
 const Hero = () => {
     const { t } = useTranslation();
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [nextImageIndex, setNextImageIndex] = useState(1);
+    const [isPaused, setIsPaused] = useState(false);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    const heroImages = [hero1, hero2, hero3, hero4, hero5];
+
+    useEffect(() => {
+        if (isPaused || isTransitioning) return;
+
+        const interval = setInterval(() => {
+            setIsTransitioning(true);
+            const nextIndex = (currentImageIndex + 1) % heroImages.length;
+            setNextImageIndex(nextIndex);
+
+            // Small delay before actually changing the current index
+            setTimeout(() => {
+                setCurrentImageIndex(nextIndex);
+                setIsTransitioning(false);
+            }, 100);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, [heroImages.length, isPaused, currentImageIndex, isTransitioning]);
+
+    const handleDotClick = (index) => {
+        setCurrentImageIndex(index);
+        setIsPaused(true);
+        setTimeout(() => setIsPaused(false), 8000);
+    };
 
     return (
         <div className="hero-section position-relative overflow-hidden">
-            <img
-                src={heroImage}
-                alt="Farming - Sustainable Agriculture"
-                className="hero-image position-absolute top-0 start-0 w-100 h-100"
-                style={{ objectFit: 'cover', objectPosition: 'center', zIndex: 1 }}
-            />
+            {heroImages.map((image, index) => (
+                <div
+                    key={index}
+                    className={`hero-image-wrapper position-absolute top-0 start-0 w-100 h-100 ${index === currentImageIndex ? 'active' : ''
+                        } ${index === nextImageIndex && isTransitioning ? 'next' : ''}`}
+                    style={{ zIndex: index === currentImageIndex ? 1 : 0 }}
+                >
+                    <img
+                        src={image}
+                        alt={`Farming - Sustainable Agriculture ${index + 1}`}
+                        className="hero-image w-100 h-100"
+                        style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    />
+                    <div className="hero-image-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+                </div>
+            ))}
 
             <div
                 className="hero-overlay position-absolute top-0 start-0 w-100 h-100"
-                style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', zIndex: 2 }}
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', zIndex: 2 }}
             ></div>
 
             <div className="hero-text-container" style={{ zIndex: 3 }}>
@@ -49,13 +94,27 @@ const Hero = () => {
                                     </svg>
                                     <span>AI Powered</span>
                                 </div>
-                                <div className="launching-soon-badge">
+                                <div className="launching-soon-badge" style={{ marginBottom: '1rem' }}>
                                     <span>🚀 Launching Soon - Get in Touch</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="hero-dots-container" style={{ zIndex: 4 }}>
+                {[0, 1, 2, 3, 4].map((index) => (
+                    <span
+                        key={index}
+                        className={index === currentImageIndex ? 'hero-dot-active' : 'hero-dot-inactive'}
+                        onClick={() => handleDotClick(index)}
+                        role="button"
+                        tabIndex={0}
+                        onKeyPress={(e) => e.key === 'Enter' && handleDotClick(index)}
+                        aria-label={`Go to image ${index + 1}`}
+                    />
+                ))}
             </div>
         </div>
     );

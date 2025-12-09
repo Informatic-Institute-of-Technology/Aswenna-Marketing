@@ -6,6 +6,7 @@ import Hero from '../Components/Hero';
 import HowWeEmpowerYou from '../Components/HowWeEmpowerYou';
 import MainLayout from '../Components/Layout/MainLayout';
 import SectionContainer from '../Components/Layout/SectionContainer';
+import TestimonialsSection from '../Components/TestimonialsSection';
 
 
 
@@ -25,6 +26,7 @@ const Home = () => {
                 <ComingSoon />
             </SectionContainer>
 
+            <TestimonialsSection />
             <CallToAction />
             <Footer />
         </MainLayout>

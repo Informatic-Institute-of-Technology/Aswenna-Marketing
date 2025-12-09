@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "si": "රුවන් විජේසිංහ",
+      "en": "Ruwan Wijesinghe"
+    },
+    "position": {
+      "si": "ප්‍රගතිශීලී ගොවියා",
+      "en": "Progressive Farmer"
+    },
+    "location": {
+      "si": "මාතලේ",
+      "en": "Matale"
+    },
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/46.jpg",
+    "text": {
+      "si": "Aswenna හරහා ලැබුණු ස්මාර්ට් ගොවිතැන් තාක්ෂණය සහ විශේෂඥ උපදෙස් මගින් මගේ අස්වැන්න දෙගුණ කළා. නවීන ගොවීන්ට ඉතා නිර්දේශිතයි.",
+      "en": "Smart farming technology and expert guidance through Aswenna doubled my crop yield. Highly recommended for modern farmers."
+    },
+    "rating": 5,
+    "approved": true
+  },
+  {
+    "id": 2,
+    "name": {
+      "si": "නිමල් පෙරේරා",
+      "en": "Nimal Perera"
+    },
+    "position": {
+      "si": "කෘෂිකාර්මික ආයෝජකයා",
+      "en": "Agricultural Investor"
+    },
+    "location": {
+      "si": "කුරුණෑගල",
+      "en": "Kurunegala"
+    },
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/52.jpg",
+    "text": {
+      "si": "Aswenna හරහා ඉඩම් හිමියන් සමඟ හවුල්කාරිත්වය ඇති කර ගත්තා. දැන් මම කලාප පුරා සාර්ථක කෘෂිකාර්මික ව්‍යාපෘති තුනක් කළමනාකරණය කරනවා.",
+      "en": "Aswenna connected me with landowners looking for partnerships. Now I manage three successful agricultural projects across the region."
+    },
+    "rating": 5,
+    "approved": true
+  },
+  {
+    "id": 3,
+    "name": {
+      "si": "සුනිල් ජයවර්ධන",
+      "en": "Sunil Jayawardena"
+    },
+    "position": {
+      "si": "ඉඩම් හිමියා",
+      "en": "Land Owner"
+    },
+    "location": {
+      "si": "අනුරාධපුරය",
+      "en": "Anuradhapura"
+    },
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/71.jpg",
+    "text": {
+      "si": "Aswenna හරහා මගේ ඉඩම වගා කිරීමට විශ්වාසවන්ත ගොවීන් හමුවුණා. වේදිකාව හවුල්කාරිත්වය සහ සන්නිවේදනය බාධාවකින් තොරව කළා.",
+      "en": "Through Aswenna, I found reliable farmers to cultivate my land. The platform made partnership and communication seamless."
+    },
+    "rating": 5,
+    "approved": true
+  },
+  {
+    "id": 4,
+    "name": {
+      "si": "ප්‍රියංකා සිල්වා",
+      "en": "Priyanka Silva"
+    },
+    "position": {
+      "si": "කෘෂිව්‍යාපාර උපදේශක",
+      "en": "Agribusiness Consultant"
+    },
+    "location": {
+      "si": "කොළඹ",
+      "en": "Colombo"
+    },
+    "image": "https://xsgames.co/randomusers/assets/avatars/female/32.jpg",
+    "text": {
+      "si": "Aswenna හි දත්ත මත පදනම් වූ තීක්ෂණ බුද්ධිය මගේ සේවාදායකයින්ට දැනුවත් තීරණ ගැනීමට උපකාර කරනවා. එය ශ්‍රී ලංකා කෘෂිකර්මාන්තය පරිවර්තනය කරමින් සිටී.",
+      "en": "Aswenna's data-driven insights help my clients make informed decisions. It's transforming Sri Lankan agriculture."
+    },
+    "rating": 5,
+    "approved": true
+  },
+  {
+    "id": 5,
+    "name": {
+      "si": "චමින්ද රත්නායක",
+      "en": "Chaminda Ratnayake"
+    },
+    "position": {
+      "si": "කාබනික ගොවියා",
+      "en": "Organic Farmer"
+    },
+    "location": {
+      "si": "මහනුවර",
+      "en": "Kandy"
+    },
+    "image": "https://xsgames.co/randomusers/assets/avatars/male/63.jpg",
+    "text": {
+      "si": "වේදිකාව මට කාබනික නිෂ්පාදන ගැන උනන්දුවක් දක්වන ගැනුම්කරුවන් සමඟ සම්බන්ධ වීමට උදව් කළා. මගේ ව්‍යාපාරය විශාල ලෙස වර්ධනය වුණා.",
+      "en": "The platform helped me connect with buyers interested in organic produce. My business has grown exponentially."
+    },
+    "rating": 5,
+    "approved": true
+  },
+  {
+    "id": 6,
+    "name": {
+      "si": "මාලිනී ප්‍රනාන්දු",
+      "en": "Malini Fernando"
+    },
+    "position": {
+      "si": "කෘෂිකාර්මික කළමනාකරු",
+      "en": "Agricultural Manager"
+    },
+    "location": {
+      "si": "ගම්පහ",
+      "en": "Gampaha"
+    },
+    "image": "https://xsgames.co/randomusers/assets/avatars/female/44.jpg",
+    "text": {
+      "si": "Aswenna වේදිකාව හරහා මට හොඳම තාක්ෂණික උපදෙස් සහ සම්පත් සොයාගත හැකි විය. ඉතාමත් ප්‍රයෝජනවත්.",
+      "en": "Through Aswenna platform, I found the best technical advice and resources. Extremely useful."
+    },
+    "rating": 5,
+    "approved": true
+  }
+]
