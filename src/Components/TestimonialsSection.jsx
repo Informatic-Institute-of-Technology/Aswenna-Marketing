@@ -132,17 +132,32 @@ const TestimonialsSection = () => {
                             }
                         </p>
                     </div>
-                    <button
-                        className="add-testimonial-btn"
-                        onClick={() => setIsModalOpen(true)}
-                        aria-label={currentLang === 'si' ? 'ඔබේ අත්දැකීම් එක් කරන්න' : 'Add Your Experience'}
-                    >
-                        <svg className="plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                        </svg>
-                        <span>{currentLang === 'si' ? 'ඔබේ අත්දැකීම් එක් කරන්න' : 'Share Your Experience'}</span>
-                    </button>
+                    <div className="testimonial-actions">
+                        <button
+                            className="add-testimonial-btn"
+                            onClick={() => setIsModalOpen(true)}
+                            aria-label={currentLang === 'si' ? 'ඔබේ අත්දැකීම් එක් කරන්න' : 'Add Your Experience'}
+                        >
+                            <svg className="plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <span>{currentLang === 'si' ? 'ඔබේ අත්දැකීම් එක් කරන්න' : 'Share Your Experience'}</span>
+                        </button>
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeAsw7fpHnA5GyiSG3JpYwrzS2YvNVzosgxRdq0JOYSGcUx4w/formResponse"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="feedback-form-btn"
+                            aria-label={currentLang === 'si' ? 'ප්‍රතිපෝෂණ ආකෘති පත්‍රය' : 'Share Feedback'}
+                        >
+                            <svg className="form-icon" width="20" height="20" viewBox="0 0 48 48" fill="none">
+                                <path d="M42 6H6v36h36V6z" fill="#673AB7" />
+                                <path d="M14 18h20v3H14zm0 6h20v3H14zm0 6h14v3H14z" fill="#fff" />
+                            </svg>
+                            <span>{currentLang === 'si' ? 'ප්‍රතිපෝෂණ ආකෘති පත්‍රය' : 'Share Feedback'}</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div className="testimonials-carousel-wrapper" data-aos="fade-up" data-aos-delay="100">
