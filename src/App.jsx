@@ -17,7 +17,26 @@ function AppContent() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [theme, setTheme] = useState('dark');
 
-  const hasCompletedFirstVisit = localStorage.getItem('hasCompletedFirstVisit') === 'true';
+  const checkFirstVisit = () => {
+    const visitData = localStorage.getItem('hasCompletedFirstVisit');
+    if (!visitData) return false;
+
+    try {
+      const { value, timestamp } = JSON.parse(visitData);
+      const now = new Date().getTime();
+      const tenMinutes = 10 * 60 * 1000;
+
+      if (now - timestamp > tenMinutes) {
+        localStorage.removeItem('hasCompletedFirstVisit');
+        return false;
+      }
+      return value === 'true';
+    } catch {
+      return visitData === 'true';
+    }
+  };
+
+  const hasCompletedFirstVisit = checkFirstVisit();
   const [showSplash, setShowSplash] = useState(!hasCompletedFirstVisit);
   const [showInfo, setShowInfo] = useState(false);
 
@@ -48,6 +67,7 @@ function AppContent() {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -67,7 +87,11 @@ function AppContent() {
   };
 
   const handleInfoComplete = () => {
-    localStorage.setItem('hasCompletedFirstVisit', 'true');
+    const visitData = {
+      value: 'true',
+      timestamp: new Date().getTime()
+    };
+    localStorage.setItem('hasCompletedFirstVisit', JSON.stringify(visitData));
     setShowInfo(false);
   };
 

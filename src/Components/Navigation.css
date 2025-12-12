@@ -10,9 +10,9 @@
 }
 
 .navbar-container {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
   border-radius: 50px;
   padding: 0.6rem 2rem;
   margin: 1rem auto 0;
@@ -45,9 +45,9 @@
 }
 
 .navbar.scrolled .navbar-container {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
