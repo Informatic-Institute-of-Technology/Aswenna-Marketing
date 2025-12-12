@@ -7,6 +7,7 @@ import HowWeEmpowerYou from '../Components/HowWeEmpowerYou';
 import MainLayout from '../Components/Layout/MainLayout';
 import SectionContainer from '../Components/Layout/SectionContainer';
 import TestimonialsSection from '../Components/TestimonialsSection';
+import VideoSection from '../Components/VideoSection';
 
 
 
@@ -17,6 +18,8 @@ const Home = () => {
             <SectionContainer hasBorder={false} className="py-5">
                 <HowWeEmpowerYou />
             </SectionContainer>
+
+            <VideoSection />
 
             <SectionContainer hasBorder={false} className="py-5">
                 <BenefitsSection />

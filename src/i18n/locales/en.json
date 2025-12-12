@@ -86,5 +86,16 @@
     "title": "Mobile App Launching Soon",
     "description": "Take Aswenna everywhere you go. Manage your farms, track investments, and connect with partners from your mobile device.",
     "notifyButton": "Notify Me When Available"
+  },
+  "videoSection": {
+    "title": "Transforming Agriculture Through Innovation",
+    "subtitle": "The integrated digital marketplace connecting Farmers, Investors, and Land Owners for secure, AI-powered agricultural deal finalization and project management.",
+    "description": "Our solution is a robust, three-sided digital marketplace designed to revolutionize the agricultural sector by securely connecting Farmers, Investors, and Land Owners. The core purpose of the platform is to streamline complex processes: making it easier to find farming opportunities, secure necessary investment, and rent or lease farmland. We utilize AI-powered matchmaking to align farming needs with the right land and investment, facilitating full tri-party deal alignment. The platform offers an end-to-end deal lifecycle, starting from matching and negotiation through to agreement creation and payment execution. Key features include real-time chat and chatbot assistance for communication and guidance. The system features an automated, secure deal-finalization process and manages all agreements and payments in one place. All transactions are handled by an integrated payment gateway, ensuring secure, milestone-based payments and providing project tracking dashboards and analytics for all users. We enforce commitment via locked deal rules, ensuring no overlapping finalized deals or rental commitments are made, thereby securing the interests of all parties involved.",
+    "highlight1Title": "Community Driven",
+    "highlight1Desc": "Building strong farming communities through collaboration and shared knowledge",
+    "highlight2Title": "Sustainable Growth",
+    "highlight2Desc": "Implementing eco-friendly practices that ensure long-term agricultural success",
+    "highlight3Title": "Tech Innovation",
+    "highlight3Desc": "Leveraging AI and technology to optimize farming operations and productivity"
   }
 }
