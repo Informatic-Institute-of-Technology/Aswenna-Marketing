@@ -14,7 +14,6 @@ const Hero = () => {
         'https://img.freepik.com/free-photo/truck-working-field-sunny-day_23-2151976946.jpg?t=st=1765531505~exp=1765535105~hmac=1a762aa4464a55f10fd78f6a78ce85835052f4d3a68293f8da3f69bce3d15a42&w=1480',
         'https://img.freepik.com/free-photo/harvesting-coffee-farmers-gathering-beans_23-2151983623.jpg?t=st=1765531670~exp=1765535270~hmac=42bff96715a225731f7a1f8d2b5888d4dde93b47778dfcf6b7c13025a243965c&w=1480',
         'https://img.freepik.com/premium-photo/rear-view-woman-standing-against-trees_1048944-7396775.jpg?w=1480',
-        'https://img.freepik.com/free-photo/farmer-taking-care-photorealistic-goat-farm_23-2151465011.jpg?t=st=1765532216~exp=1765535816~hmac=1e21b7e5b280cbd42b9cf62cdb6d4c8dde2f61198865d712bd81b0f3640d7c55&w=1480',
         'https://img.freepik.com/free-photo/african-man-harvesting-vegetables_23-2151441190.jpg?t=st=1765532399~exp=1765535999~hmac=7922d0c49d78605c29b010f54af3b5256e177598f7c8f3eec717422dc4d4e515&w=1480'
     ];
 
