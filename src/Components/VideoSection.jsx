@@ -92,7 +92,7 @@ const VideoSection = () => {
                                 <div className="video-container">
                                     <iframe
                                         className="responsive-iframe"
-                                        src="https://www.youtube.com/embed/7ltm2O8UdGs"
+                                        src="https://www.youtube.com/embed/tbZHnYW6-3E?si=uqxvZ3MCBgxpRwkG"
                                         title="Sri Lankan Agriculture and Farming"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
