@@ -1,3 +1,4 @@
+/* InfoPage Component - Currently Commented Out
 import { useEffect, useRef, useState } from 'react';
 import logoImage from '../assets/Company/AswennaLogo.png';
 import infoBackground from '../assets/Splash/InfoBackground.jpg';
@@ -285,6 +286,13 @@ const InfoPage = ({ onContinue }) => {
             </div>
         </div>
     );
+};
+*/
+
+// Placeholder component while InfoPage is commented out
+// eslint-disable-next-line no-unused-vars
+const InfoPage = ({ onContinue }) => {
+    return null;
 };
 
 export default InfoPage;

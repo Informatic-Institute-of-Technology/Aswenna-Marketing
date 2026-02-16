@@ -8,7 +8,6 @@ import './App.css';
 import About from './Pages/about';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
-import InfoPage from './Pages/InfoPage';
 import Services from './Pages/Services';
 import SplashScreen from './Pages/Splash';
 
@@ -38,7 +37,7 @@ function AppContent() {
 
   const hasCompletedFirstVisit = checkFirstVisit();
   const [showSplash, setShowSplash] = useState(!hasCompletedFirstVisit);
-  const [showInfo, setShowInfo] = useState(false);
+  // const [showInfo, setShowInfo] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -82,26 +81,33 @@ function AppContent() {
     : `radial-gradient(700px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(92, 237, 18, 0.18), rgba(213, 237, 208, 0.25), rgba(248, 253, 245, 1))`;
 
   const handleLoadingComplete = () => {
-    setShowSplash(false);
-    setShowInfo(true);
-  };
-
-  const handleInfoComplete = () => {
     const visitData = {
       value: 'true',
       timestamp: new Date().getTime()
     };
     localStorage.setItem('hasCompletedFirstVisit', JSON.stringify(visitData));
-    setShowInfo(false);
+    setShowSplash(false);
+    // Skip InfoPage - go directly to landing page
+    // setShowInfo(true);
   };
+
+  // const handleInfoComplete = () => {
+  //   const visitData = {
+  //     value: 'true',
+  //     timestamp: new Date().getTime()
+  //   };
+  //   localStorage.setItem('hasCompletedFirstVisit', JSON.stringify(visitData));
+  //   setShowInfo(false);
+  // };
 
   if (showSplash) {
     return <SplashScreen onLoadingComplete={handleLoadingComplete} />;
   }
 
-  if (showInfo) {
-    return <InfoPage onContinue={handleInfoComplete} />;
-  }
+  // InfoPage is currently commented out - redirects directly to landing page
+  // if (showInfo) {
+  //   return <InfoPage onContinue={handleInfoComplete} />;
+  // }
 
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
